@@ -66,16 +66,11 @@ void quiz::load(string filename) {
   load_file.ignore();
   // Deletes old question array then create a new array whose capacity is
   // 30 elements more than the number of questions in the loaded file
-  // for (int i = 0; i < _size; i++) {
-  //   delete (*(_questions + i));
-  //   (*(_questions + i)) = nullptr;
-  // }
-  // delete[] _questions;
-  // _capacity = _size + 30;
-  // _questions = new question*[_capacity];
+  delete[] _questions;
+  _capacity = _size + 30;
+  _questions = new question *[_capacity];
 
   // Read all questions and assign question values to the array
-
   string temp;
   for (int i = 0; i < _size; i++) {
     getline(load_file, temp);

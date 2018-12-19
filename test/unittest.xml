@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="33" failures="1" disabled="0" errors="0" timestamp="2018-12-18T15:39:36" time="0.062" name="AllTests">
-  <testsuite name="question" tests="6" failures="0" disabled="0" errors="0" time="0">
+<testsuites tests="33" failures="0" disabled="0" errors="0" timestamp="2018-12-19T15:39:46" time="0.13" name="AllTests">
+  <testsuite name="question" tests="6" failures="0" disabled="0" errors="0" time="0.001">
     <testcase name="PublicMethodsPresent" status="run" time="0" classname="question" />
     <testcase name="DefaultConstructor" status="run" time="0" classname="question" />
-    <testcase name="TextAnswerConstructor" status="run" time="0" classname="question" />
+    <testcase name="TextAnswerConstructor" status="run" time="0.001" classname="question" />
     <testcase name="MutatorsAndAccessors" status="run" time="0" classname="question" />
     <testcase name="as_save_text" status="run" time="0" classname="question" />
     <testcase name="check" status="run" time="0" classname="question" />
@@ -17,36 +17,30 @@
     <testcase name="as_save_text" status="run" time="0" classname="tf_question" />
     <testcase name="check" status="run" time="0" classname="tf_question" />
   </testsuite>
-  <testsuite name="quiz" tests="8" failures="1" disabled="0" errors="0" time="0.006">
+  <testsuite name="quiz" tests="8" failures="0" disabled="0" errors="0" time="0.02">
     <testcase name="DefaultConstructor" status="run" time="0" classname="quiz" />
     <testcase name="CapacityConstructor" status="run" time="0" classname="quiz" />
     <testcase name="add_question" status="run" time="0" classname="quiz" />
-    <testcase name="add_tf_question" status="run" time="0.001" classname="quiz" />
-    <testcase name="get_question" status="run" time="0" classname="quiz" />
+    <testcase name="add_tf_question" status="run" time="0" classname="quiz" />
+    <testcase name="get_question" status="run" time="0.001" classname="quiz" />
     <testcase name="display" status="run" time="0.001" classname="quiz" />
-    <testcase name="save" status="run" time="0.003" classname="quiz" />
-    <testcase name="load" status="run" time="0.001" classname="quiz">
-      <failure message="test/unittest.cpp:331&#x0A;      Expected: q.capacity()&#x0A;      Which is: 100&#x0A;To be equal to: file_questions_size + 30&#x0A;      Which is: 38" type=""><![CDATA[test/unittest.cpp:331
-      Expected: q.capacity()
-      Which is: 100
-To be equal to: file_questions_size + 30
-      Which is: 38]]></failure>
-    </testcase>
+    <testcase name="save" status="run" time="0.01" classname="quiz" />
+    <testcase name="load" status="run" time="0.008" classname="quiz" />
   </testsuite>
   <testsuite name="Global" tests="2" failures="0" disabled="0" errors="0" time="0.001">
     <testcase name="CreateQuestion" status="run" time="0.001" classname="Global" />
     <testcase name="CreateTFQuestion" status="run" time="0" classname="Global" />
   </testsuite>
-  <testsuite name="main" tests="10" failures="0" disabled="0" errors="0" time="0.055">
-    <testcase name="CreateQuestionChoice" status="run" time="0.006" classname="main" />
-    <testcase name="CreateTFQuestionChoice" status="run" time="0.008" classname="main" />
-    <testcase name="FiniteChoiceLoop" status="run" time="0.005" classname="main" />
-    <testcase name="DisplayQuestionsChoice" status="run" time="0.005" classname="main" />
-    <testcase name="SaveQuestionsChoice" status="run" time="0.003" classname="main" />
-    <testcase name="LoadQuestionsChoice" status="run" time="0.005" classname="main" />
+  <testsuite name="main" tests="10" failures="0" disabled="0" errors="0" time="0.108">
+    <testcase name="CreateQuestionChoice" status="run" time="0.009" classname="main" />
+    <testcase name="CreateTFQuestionChoice" status="run" time="0.003" classname="main" />
+    <testcase name="FiniteChoiceLoop" status="run" time="0.003" classname="main" />
+    <testcase name="DisplayQuestionsChoice" status="run" time="0.002" classname="main" />
+    <testcase name="SaveQuestionsChoice" status="run" time="0.006" classname="main" />
+    <testcase name="LoadQuestionsChoice" status="run" time="0.009" classname="main" />
     <testcase name="QuitChoice" status="run" time="0.003" classname="main" />
-    <testcase name="InvalidOptionChoice" status="run" time="0.005" classname="main" />
-    <testcase name="ChoiceLoopLowercase" status="run" time="0.012" classname="main" />
-    <testcase name="ChoiceLoopUppercase" status="run" time="0.003" classname="main" />
+    <testcase name="InvalidOptionChoice" status="run" time="0.003" classname="main" />
+    <testcase name="ChoiceLoopLowercase" status="run" time="0.006" classname="main" />
+    <testcase name="ChoiceLoopUppercase" status="run" time="0.063" classname="main" />
   </testsuite>
 </testsuites>

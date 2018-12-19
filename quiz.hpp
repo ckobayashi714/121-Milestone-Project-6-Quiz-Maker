@@ -39,11 +39,12 @@ public:
   }
   quiz() : quiz(100) {}
   ~quiz() {
-    for (int i = 0; i < _capacity; i++) {
-      delete (*(_questions + i));
-      //(*(_questions + i)) = nullptr;
+    for (int i = 0; i < _size; i++) {
+      delete (*(_questions + 1));
+      (*(_questions + 1)) = nullptr;
     }
     delete[] _questions;
+    _questions = nullptr;
   }
 
   void set_size(int size) { _size = size; }
